@@ -1,0 +1,124 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background: rgb(204, 204, 204);
+
+}
+.head{
+    color: white;
+    background-color:orange;
+    /*background: linear-gradient(orange,white);*/
+    height: 50px;
+    font-size: 28pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+    padding:30px 10px 0 10px;
+
+}
+.bidhead{
+    font-weight: lighter;
+}
+.flex-container{
+    margin: 0px auto; 
+    align-content: center;
+    width: 1200px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 80px; 
+}
+
+.art-container{
+    width: 1200px;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 40px;
+
+}
+.art-box{
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px;
+    background: #fff;
+    overflow: hidden;
+    break-inside: avoid;
+    
+}
+.art-box img{
+   max-width: 100%;
+}
+.art-box h3{
+    margin: 10px 5px 5px;
+    padding: 0;
+    font-size: 20px;
+}
+
+.time-counter{
+    max-width: 100%;
+}
+
+.art-bid{
+    outline: none;
+    margin-top: 5px;
+    padding:3px;
+    background:rgb(255, 251, 244);
+    border-radius: 20px;
+    border-color: orange;
+    width: 100px;
+    font-size: 16px;
+    direction: rtl;
+}
+.art-bid-btn{
+    outline: none;
+    margin-top: 5px;
+    padding:3px;
+    background:rgb(250, 150, 1);
+    border-radius: 20px;
+    border-color: rgb(255, 153, 0);
+    font-size: 16px;
+    width: 80px;
+    font-weight: bolder;
+    color: #fff;
+    cursor:pointer;
+}
+
+.time-counter,.bid-font{
+    color: gray;
+    font-size: 14px;
+}
+.time-counter{
+    margin: 5px;
+}
+.money{
+    position: relative;right:105px;
+    font-size: 14px;
+}
+.now-bid-price{
+    margin: 5px;
+}
+
+.bid-amount{
+    font-size: 22px; 
+    margin: 5px;
+    text-shadow: 1px 1px 2px rgb(165, 165, 165);
+    color: rgb(224, 101, 0);
+}
+
+
+@media (max-width:1200px){
+    .art-container{
+        columns: 3;
+    }
+}
+
+@media (max-width:768px){
+    .art-container{
+        columns: 2;
+    }
+}
+
+@media (max-width:480px){
+    .art-container{
+        columns: 1;
+    }
+}
+
