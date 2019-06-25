@@ -4,7 +4,6 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="scripts/jquery.countdown.js"></script>
-        <script src="scripts/masonry.pkgd.min.js"></script>
         <link rel="Shortcut Icon" type="image/x-icon" href="img/a.ico">
         <link href="style/style.css" rel="stylesheet" type="text/css">
         <meta charset="utf-8">
@@ -18,25 +17,24 @@
             </div>
         </div>
 
-        <div class="art-container">         
+        <div class="art-container">      
+
             <div class="art-box">
                 <div class="art-img">
                     <img src="img/art1.jpg">  
                         <h3>Art-1</h3>
                         <div class="now-bid-price">
-                            <span class="bid-font">當前出價</span>
-                            <strong id = "new-bid-price"class="bid-amount" >$0</strong>
+                            <span class="bid-font">當前出價<span class="money-icon">$</span></span>
+                            <strong id = "new-bid-price"class="bid-amount" >0</strong>
                         </div>
                         <div class="time-counter" data-countdown="2019/10/01"></div>              
                         <form>
                             <input id ="bid-price"class="art-bid" ></input>
                             <span class="money">NT$</span>
-                            <input class="art-bid-btn"type="submit" value ="出價" onclick="bidding()"></input>     
+                            <input id="bid-btn" class="art-bid-btn"type="submit" value ="出價" ></input>     
                         </form>
-                </div>
+                </div>         
             </div>
-
-
 
 
             <div class="art-box">
@@ -44,14 +42,14 @@
                     <img src="img/art2.jpg">
                     <h3>Art-2</h3>
                     <div class="now-bid-price">
-                        <span class="bid-font">當前出價</span>
-                        <strong id = "new-bid-price"class="bid-amount" >$0</strong>
+                        <span class="bid-font">當前出價<span class="money-icon">$</span></span>
+                        <strong id = "new-bid-price"class="bid-amount" >0</strong>
                     </div>
                     <div class="time-counter" data-countdown="2019/10/01"></div>              
                     <form>
                         <input id ="bid-price"class="art-bid" ></input>
                         <span class="money">NT$</span>
-                        <input class="art-bid-btn"type="submit" value ="出價" onclick="bidding()"></input>     
+                        <input id="bid-btn" class="art-bid-btn"type="submit" value ="出價" ></input>     
                     </form>
                 </div>
             </div>
@@ -61,14 +59,14 @@
                     <img src="img/art3.jpg">
                     <h3>Art-3</h3>
                     <div class="now-bid-price">
-                        <span class="bid-font">當前出價</span>
-                        <strong id = "new-bid-price"class="bid-amount" >$0</strong>
+                        <span class="bid-font">當前出價<span class="money-icon">$</span></span>
+                        <strong id = "new-bid-price"class="bid-amount" >0</strong>
                     </div>
                     <div class="time-counter" data-countdown="2019/10/01"></div>              
                     <form>
                         <input id ="bid-price"class="art-bid" ></input>
                         <span class="money">NT$</span>
-                        <input class="art-bid-btn"type="submit" value ="出價" onclick="bidding()"></input>     
+                        <input id="bid-btn" class="art-bid-btn"type="submit" value ="出價" ></input>     
                     </form>
                 </div>
             </div>
@@ -79,14 +77,14 @@
                     <img src="img/art4.jpg">
                     <h3>Art-4</h3>
                     <div class="now-bid-price">
-                        <span class="bid-font">當前出價</span>
-                        <strong id = "new-bid-price"class="bid-amount" >$0</strong>
+                        <span class="bid-font">當前出價<span class="money-icon">$</span></span>
+                        <strong id = "new-bid-price"class="bid-amount" >0</strong>
                     </div>
                     <div class="time-counter" data-countdown="2019/10/01"></div>              
                     <form>
                         <input id ="bid-price"class="art-bid" ></input>
                         <span class="money">NT$</span>
-                        <input class="art-bid-btn"type="submit" value ="出價" onclick="bidding()"></input>     
+                        <input id="bid-btn" class="art-bid-btn"type="submit" value ="出價" ></input>     
                     </form>
                 </div>
                 </a>
@@ -97,14 +95,14 @@
                     <img src="img/art5.jpg">
                     <h3>Art-5</h3>
                     <div class="now-bid-price">
-                        <span class="bid-font">當前出價</span>
-                        <strong id = "new-bid-price"class="bid-amount" >$0</strong>
+                        <span class="bid-font">當前出價<span class="money-icon">$</span></span>
+                        <strong id = "new-bid-price"class="bid-amount" >0</strong>
                     </div>
                     <div class="time-counter" data-countdown="2019/10/01"></div>              
                     <form>
                         <input id ="bid-price"class="art-bid" ></input>
                         <span class="money">NT$</span>
-                        <input class="art-bid-btn"type="submit" value ="出價" onclick="bidding()"></input>     
+                        <input id="bid-btn" class="art-bid-btn"type="submit" value ="出價"></input>     
                     </form>
                 </div>
             </div>
@@ -114,14 +112,14 @@
                     <img src="img/art6.jpg">
                     <h3>Art-6</h3>
                     <div class="now-bid-price">
-                        <span class="bid-font">當前出價</span>
-                        <strong id = "new-bid-price"class="bid-amount" >$0</strong>
+                        <span class="bid-font">當前出價<span class="money-icon">$</span></span>
+                        <strong id = "new-bid-price"class="bid-amount" >0</strong>
                     </div>
                     <div class="time-counter" data-countdown="2019/10/01"></div>              
                     <form>
                         <input id ="bid-price"class="art-bid" ></input>
                         <span class="money">NT$</span>
-                        <input class="art-bid-btn"type="submit" value ="出價" onclick="bidding()"></input>     
+                        <input id="bid-btn" class="art-bid-btn"type="submit" value ="出價"></input>     
                     </form>
                 </div>
             </div>
