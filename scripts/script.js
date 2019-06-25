@@ -30,12 +30,12 @@ $("form").submit(function( event ) {
 
   if(newbid>oldbid){
     $(this).parent().parent().find("#new-bid-price").html(newbid);
-    $(this).parent().find("#bid-ok").text( "出價成功!" ).show().fadeOut( 2000 );
+    $(this).parent().find("#bid-ok").text( "出價成功!" ).show().fadeOut( 1000 );
     event.preventDefault();
     return;
     }
     alert("出價需大於當前出價");
-    $(this).parent().find("#bid-ok").text( "出價無效!" ).show().fadeOut( 2000 );
+    $(this).parent().find("#bid-ok").text( "出價無效!" ).show().fadeOut( 1000 );
     event.preventDefault();
  
 });
