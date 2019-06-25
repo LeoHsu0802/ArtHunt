@@ -13,8 +13,14 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 50px;
     padding:30px 10px 0 10px;
-
 }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
 .bidhead{
     font-weight: lighter;
 }
@@ -61,8 +67,9 @@ body{
     border-color: orange;
     width: 100px;
     font-size: 16px;
-    direction: rtl;
+    direction: rtl;  
 }
+
 .art-bid-btn{
     outline: none;
     margin-top: 5px;
@@ -97,6 +104,13 @@ body{
 }
 .money-icon{
     margin-left:5px; 
+}
+
+#bid-ok{
+    font-size: 16px;
+    color: red;
+    font-weight: bolder;
+    margin-left: 5px;
 }
 
 @media (max-width:1200px){

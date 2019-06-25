@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+//倒數計時
 $('[data-countdown]').each(function() {
     var $this = $(this), finalDate = $(this).data('countdown');
     $this.countdown(finalDate, function(event) {
@@ -21,16 +21,23 @@ $(".art-bid-btn").mouseout(function(){
   $(this).css('background', 'rgb(255, 153, 0)');
 });
 
-$(document).on("click","#bid-btn",function() {
-  var bid = $(this).prev().prev("#bid-price").val();
-  $(this).parent().parent().parent().find("#new-bid-price").html(bid);
+//出價判斷
+$("form").submit(function( event ) {
+  var newbid = $(this).find("#bid-price").val();
+  var newbid = parseInt(newbid)
+  var oldbid = $(this).parent().parent().parent().find("#new-bid-price").html();
+  var oldbid = parseInt(oldbid)
+
+  if(newbid>oldbid){
+    $(this).parent().parent().parent().find("#new-bid-price").html(newbid);
+    $(this).parent().parent().parent().find("#bid-ok").text( "出價成功!" ).show().fadeOut( 2000 );
+    event.preventDefault();
+    return;
+    }
+    alert("出價需大於當前出價");
+    $(this).parent().parent().parent().find("#bid-ok").text( "出價無效!" ).show().fadeOut( 2000 );
+    event.preventDefault();
+ 
 });
 
-
-})
-/*
-function bidding(){
-  var bid=document.getElementById("bid-price").value;
-  document.getElementsById("new-bid-price").innerHTML='$'+bid;
-}
-*/
+});
