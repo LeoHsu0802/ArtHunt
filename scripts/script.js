@@ -6,16 +6,9 @@ $('[data-countdown]').each(function() {
       $this.html(event.strftime('剩下 %D 天 %H 時 %M 分 %S 秒'));
       if(event.elapsed){
         $this.html(event.strftime('競標結束'))
+        $(this).next("form").hide()  
       }
     });
-  });
-
-$(".time-counter").each(function(){
-  
-  if ($(this).html() ='競標結束'){
-    alert("OOOO");  
-  }
-
 });
 
   
