@@ -4,8 +4,21 @@ $('[data-countdown]').each(function() {
     var $this = $(this), finalDate = $(this).data('countdown');
     $this.countdown(finalDate, function(event) {
       $this.html(event.strftime('剩下 %D 天 %H 時 %M 分 %S 秒'));
+      if(event.elapsed){
+        $this.html(event.strftime('競標結束'))
+      }
     });
   });
+
+$(".time-counter").each(function(){
+  
+  if ($(this).html() ='競標結束'){
+    alert("OOOO");  
+  }
+
+});
+
+  
 //art-box陰影
 $(".art-box").mouseover(function(){
   $(this).css('box-shadow', '9px 9px 7px #888');
@@ -37,7 +50,8 @@ $("form").submit(function( event ) {
     alert("出價需大於當前出價");
     $(this).parent().find("#bid-ok").text( "出價無效!" ).show().fadeOut( 1000 );
     event.preventDefault();
- 
-});
+  });
+
+
 
 });
