@@ -35,15 +35,30 @@ $("form").submit(function( event ) {
   var oldbid = parseInt(oldbid)
 
   if(newbid>oldbid){
+	event.preventDefault();
     $(this).parent().parent().find("#new-bid-price").html(newbid);
     $(this).parent().find("#bid-ok").text( "出價成功!" ).show().fadeOut( 1000 );
-    event.preventDefault();
+	$(this).find("#bid-price").val("");
     return;
     }
+	event.preventDefault();
     alert("出價需大於當前出價");
     $(this).parent().find("#bid-ok").text( "出價無效!" ).show().fadeOut( 1000 );
-    event.preventDefault();
   });
+
+  //AJAX
+  var xhr = new XMLHttpRequest();
+  xhr.open('get','http://localhost:3000/arts',true);
+  xhr.onload = function(){
+      if(this.status == 200){
+        console.log(xhr.responseText);
+        var data = xhr.responseText[0]
+        console.log(data);
+      }
+    };
+        xhr.send();
+
+
 
 
 
