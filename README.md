@@ -4,18 +4,18 @@ Art Bidding Website
 Page view
 ![image](view.png)
 
-Start bidding
+Start bidding /n
 ![image](item.png)
 
 Bid successful! (Bid > Now Price)
-![image](item1.png)
+![image](item-1.png)
 
 Bid Failed Alert (Bid < Now Price)
-![image](item2.png)
+![image](item-2.png)
 
 Bid Failed! (Bid < Now Price)
-![image](item3.png)
+![image](item-3.png)
 
 Time's up! Item closed
-![image](item4.png)
+![image](item-4.png)
 
