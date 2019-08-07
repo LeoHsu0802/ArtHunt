@@ -2,7 +2,7 @@
 Art Bidding Website
 
 Page view   
-![image](view.png)
+![image](view1.png)
 
 Start bidding    
 ![image](item.png) 
