@@ -5,7 +5,7 @@ Page view
 ![image](view.png)
 
 Start bidding    
-![image](item.png)
+![image](item.png) 
 
 Bid successful! (Bid > Now Price)   
 ![image](item-1.png)
